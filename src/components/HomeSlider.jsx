@@ -7,7 +7,7 @@ export default function HomeSlider() {
   return (
     <section className="home-slider owl-carousel owl-loaded">
       <div className="slider-item">
-        <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={img('bg_1.jpg')} aria-hidden="true">
+        <video className="hero-video" autoPlay muted loop playsInline preload="metadata" aria-hidden="true">
           <source src={mobileVideo} media="(max-width: 767.98px)" type="video/mp4" />
           <source src={desktopVideo} media="(min-width: 768px)" type="video/mp4" />
         </video>
