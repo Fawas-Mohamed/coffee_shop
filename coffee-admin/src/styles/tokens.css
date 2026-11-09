@@ -1,0 +1,12 @@
+﻿:root{
+ --espresso:#432818;--cream:#FFE6A7;--tan:#BB9457;--rust:#99582A;
+ --success:#4f7455;--warning:#a96e27;--danger:#a34c3a;--info:#55738a;
+ --font-heading:"Berlin Sans FB","Josefin Sans",sans-serif;--font-body:"Outfit","Poppins",sans-serif;
+ --radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:22px;
+ --shadow-soft:0 8px 28px rgba(67,40,24,.07);--shadow-pop:0 18px 56px rgba(31,21,13,.22);
+ --ease:cubic-bezier(.2,.8,.2,1);--bg:#f7f4ed;--surface:#fffdf8;--surface-raised:#fff;--surface-muted:#f0e9dc;
+ --text:#34261b;--text-secondary:#6d5b49;--text-muted:#877b6c;--border:#e8dfd1;--border-strong:#d9ccb8;
+ --sidebar:var(--espresso);--sidebar-text:#f8e9c5;--accent:var(--tan);--accent-hover:#a97d3d;--highlight:#f7ecd4;color-scheme:light;
+}
+:root[data-theme=light]{--bg:#f7f4ed;--surface:#fffdf8;--surface-raised:#fff;--surface-muted:#f0e9dc;--text:#34261b;--text-secondary:#6d5b49;--text-muted:#877b6c;--border:#e8dfd1;--border-strong:#d9ccb8;--sidebar:var(--espresso);--sidebar-text:#f8e9c5;--accent:var(--tan);--accent-hover:#a97d3d;--highlight:#f7ecd4;color-scheme:light}
+:root[data-theme=dark]{--bg:#201811;--surface:#2b2119;--surface-raised:#33271e;--surface-muted:#3b2c21;--text:#f6ead1;--text-secondary:#d8c5a5;--text-muted:#b49f81;--border:#49382a;--border-strong:#5b4634;--sidebar:#1b130e;--sidebar-text:#f8e9c5;--accent:#c49b5b;--accent-hover:#d5ad6c;--highlight:#3c2b1c;--shadow-soft:0 8px 28px rgba(0,0,0,.16);--shadow-pop:0 18px 56px rgba(0,0,0,.44);color-scheme:dark}

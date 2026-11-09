@@ -12,6 +12,10 @@ npm run build      # production build in dist/
 npm run preview    # serve the build locally
 ```
 
+## Configuration
+
+Set VITE_ADMIN_URL in .env to the admin app login URL. Development defaults to http://localhost:5174/login. For production, use the deployed URL, such as https://admin.yourdomain.com/login or https://yourusername.github.io/coffee-admin/login.
+
 ## Project structure
 
 ```

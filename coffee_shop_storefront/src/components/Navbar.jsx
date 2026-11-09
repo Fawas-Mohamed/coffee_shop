@@ -2,6 +2,9 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import useNavbarScroll from '../hooks/useNavbarScroll';
 
+const ADMIN_LOGIN_URL = import.meta.env.VITE_ADMIN_URL || 'http://localhost:5174/login';
+// To open a new tab, add target="_blank" rel="noopener noreferrer" to the login anchor below.
+
 const links = [
   { to: '/', label: 'Home' },
   { to: '/menu', label: 'Menu' },
@@ -122,6 +125,12 @@ export default function Navbar() {
                 <span className="icon icon-shopping_cart"></span>
                 <span className="bag d-flex justify-content-center align-items-center"><small>1</small></span>
               </Link>
+            </li>
+            <li className="nav-item login">
+              <a href={ADMIN_LOGIN_URL} className="nav-link" title="Admin Login" aria-label="Admin Login">
+                <span className="icon icon-user" aria-hidden="true"></span>
+                <span className="login-label">Login</span>
+              </a>
             </li>
           </ul>
         </div>

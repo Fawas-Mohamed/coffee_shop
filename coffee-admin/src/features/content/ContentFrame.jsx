@@ -1,0 +1,3 @@
+﻿import { NavLink } from 'react-router-dom';
+const links=[['hero','Home / Hero'],['services','Services'],['pricing','Pricing'],['about','About & gallery']];
+export default function ContentFrame({title,description,actions,children}){return <div className="page-content"><div className="page-heading"><div><span className="eyebrow">WEBSITE CONTENT</span><h1>{title}</h1><p>{description}</p></div>{actions}</div><nav className="content-tabs" aria-label="Content sections">{links.map(([path,label])=><NavLink key={path} to={'/content/'+path} className={({isActive})=>isActive?'active':''}>{label}</NavLink>)}</nav>{children}</div>;}

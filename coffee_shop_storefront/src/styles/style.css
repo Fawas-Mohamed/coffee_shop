@@ -9573,3 +9573,36 @@ textarea.form-control {
     padding-top: 3.5rem; }
   .menu-page .menu-products-section .menu-wrap .menu-img {
     height: 240px; } }
+
+/* Admin login entry: mirror the cart glyph and preserve a visible keyboard focus. */
+.ftco-navbar-light .navbar-nav > .nav-item.login > .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color .3s ease;
+}
+.ftco-navbar-light .navbar-nav > .nav-item.login > .nav-link .icon {
+  font-size: 20px;
+  line-height: 1;
+  color: #fff;
+  transition: color .3s ease;
+}
+.ftco-navbar-light .navbar-nav > .nav-item.login > .nav-link .login-label {
+  display: none;
+}
+.ftco-navbar-light .navbar-nav > .nav-item.login > .nav-link:hover,
+.ftco-navbar-light .navbar-nav > .nav-item.login > .nav-link:focus-visible,
+.ftco-navbar-light .navbar-nav > .nav-item.login > .nav-link:hover .icon,
+.ftco-navbar-light .navbar-nav > .nav-item.login > .nav-link:focus-visible .icon {
+  color: #c49b63;
+}
+.ftco-navbar-light .navbar-nav > .nav-item.login > .nav-link:focus-visible {
+  outline: 2px solid #c49b63 !important;
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+@media (max-width: 991.98px) {
+  .ftco-navbar-light .navbar-nav > .nav-item.login > .nav-link .login-label {
+    display: inline;
+  }
+}
